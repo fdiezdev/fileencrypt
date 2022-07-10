@@ -5,7 +5,7 @@ This code consts of two files:
 * `encrypt.py`
 * `decrypt.py`
 
-## How to use
+## How to encrypt
 ✅ You should contain all the files you want to encrypt in a folder. For instance:  
 
 `Folder1`  
@@ -22,7 +22,7 @@ This code consts of two files:
 |--- `file.txt`  
 |--- `Spreadsheet.xlsx`  
 |--- `image.png`  
-The program will return an error. if you wish to encrypt a folder, zip it and place the zip in the parent folder.
+The program will return an error. If you wish to encrypt a folder, zip it and place the zip in the parent folder.
 
 Once your environment is set up, you can run the script.  
 `$ python3 encrypt.py`  
@@ -36,3 +36,18 @@ Once you provided the file path, it will ask you if you are sure to proceed. If 
 If you selected `y`, the program will generate a 'key'. This key shall remain kept secret and safely stored, because:  
 * The files can be decrypted *ONLY* with this key.  
 * Anyone with the key can decrypt and access the files.  
+
+Safely storing your key is recommended. You can use Bitwarden to store your key.  
+  
+To make sure the key has been copied, it will ask you to confirm the key. Following, the files will be encrypted. The program will show a message of confirmation.
+
+## How to decrypt
+Initialazing the decrypt file will start the decryption process. You MUST have the correct key for decrypting the files. Otherwise, you won't be able to decrypt.  
+`$ python3 decrypt.py`  
+After that, the program will ask you for the path of the containing folder.  
+Next, provide your key.  
+If the key is correct, your files will be decrypted.  
+  
+# IMPORTANT!  
+  
+The developers are not responsible for the possible loss of data. User under your own risk.  
