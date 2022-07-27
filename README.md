@@ -1,7 +1,5 @@
 # 🔒 FileEncrypt
 _Open source file encryption software_  
-  
-**⬇️ To download the encrypting/decrypting files check "master" branch.**
 
 This code consts of two files:
 * `encrypt.py`
